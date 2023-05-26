@@ -1,40 +1,23 @@
-## 通知
-
-自`Naive Ui Admin`发布`1.x`版本之后，受到了许多小伙伴使用和热爱，当中也收到了不少的建议和反馈，比如：文档访问稳定性，详细程度，组件和页面丰富性，版本更新频率等...
-至此我们团队为了给大家更好的体验，以及能够真正做一款相对完善的`开箱即用中后台框架`，我们从`2021-08-14`号，决定停止更新`1.x`版本，重点构造一个`全新v2大版本`，
-并更名为`NaiveAdmin`，发布将定义为商业版本，详情可移步官网查看 [NaiveAdmin](https://www.naiveadmin.com)，感谢大家给予的每一个建议包括，Pr，Star，
-谢谢大家支持！
-
-## 🏡 [NaiveAdmin 官网](https://www.naiveadmin.com)
-
-## 💻 [NaiveAdmin v2 在线预览](https://pro.naiveadmin.com)
-
-## ✍ [NaiveAdmin v2 变更日志](https://www.naiveadmin.com/guide/changelog)
-
-## 关于本仓库
-该仓库将不再添加新功能，只修bug（过程可能会慢一些），有效pr会合并，所以当你选择这个版本的时候，需要衡量一下。
-
 ## 简介
 
-[Naive Ui Admin](https://github.com/jekip/naive-ui-admin) 是一个基于 [Vue3.0](https://github.com/vuejs/vue-next)、[Vite](https://github.com/vitejs/vite)、 [Naive UI](https://www.naiveui.com/)、[TypeScript](https://www.typescriptlang.org/) 的中后台解决方案，它使用了最新的前端技术栈，并提炼了典型的业务模型，页面，包括二次封装组件、动态菜单、权限校验、粒子化权限控制等功能，它可以帮助你快速搭建企业级中后台项目，相信不管是从新技术使用还是其他方面，都能帮助到你。
+[Naive Ui Admin](https://github.com/jekip/naive-ui-admin) 完全免费，且可商用，基于 [Vue3.0](https://github.com/vuejs/vue-next)、[Vite](https://github.com/vitejs/vite)、 [Naive UI](https://www.naiveui.com/)、[TypeScript](https://www.typescriptlang.org/) 的中后台解决方案，它使用了最新的前端技术栈，并提炼了典型的业务模型，页面，包括二次封装组件、动态菜单、权限校验、粒子化权限控制等功能，它可以帮助你快速搭建企业级中后台项目， 相信不管是从新技术使用还是其他方面，都能帮助到你。
 
 ## 特性
-- **最新技术栈**：使用 Vue3/vite2 等前端前沿技术开发
-- **TypeScript**: 应用程序级 JavaScript 的语言
-- **主题**：可配置的主题
-- **Mock 数据** 内置 Mock 数据方案
-- **权限** 内置完善的动态路由权限生成方案
-- **组件** 二次封装了多个常用的组件
+- 二次封装实用高扩展性组件
+- 响应式、多主题，多配置，快速集成，开箱即用
+- 最新技术栈，使用 `Vue3`、`Typescript`、`Pinia`、`Vite` 等前端前沿技术
+- 强大的鉴权系统，对路由、菜单、功能点等支持`三种鉴权模式`，满足不同的业务鉴权需求
+- 持续更新，实用性页面模板功能和交互，随意搭配组合，让构建页面变得简单化
 
 
-## 在线预览
-- [naive-ui-admin](https://naive-ui-admin.vercel.app)
+## 预览
+- [naive-ui-admin](https://jekip.github.io)
 
 账号：admin，密码：123456（随意）
 
 ## 文档
 
-[文档地址](https://naive-ui-admin-docs.vercel.app) 
+[文档地址](https://jekip.github.io/docs)
 
 ## 准备
 
@@ -47,7 +30,7 @@
 - [Naive-ui-admin](https://www.naiveui.com/) - ui 基本使用
 - [Mock.js](https://github.com/nuysoft/Mock) - mockjs 基本语法
 
-## 安装使用
+## 使用
 
 - 获取项目代码
 
@@ -126,11 +109,13 @@ yarn build
 
 ## 交流
 
-`Naive Ui Admin` 是完全开源免费的项目，在帮助开发者更方便地进行中大型管理系统开发，同时也提供 QQ 交流群使用问题欢迎在群内提问。
+`Naive Ui Admin` 使用或者其他问题，都可以在群内讨论或提问。
 
-- QQ 群 `328347666`
+![160335146-c28dd205-4600-4d62-b2c6-6456034ab7b1](https://user-images.githubusercontent.com/19426584/217689718-407e6cb9-dd3b-4a11-a025-3c58834b52ff.jpg)
 
 ## 赞助
 #### 如果你觉得这个项目帮助到了你，你可以帮作者买一杯果汁表示鼓励 🍹。
 
 ![donate](https://jekip.github.io/docs/images/sponsor.png)
+
+[Paypal Me](https://www.paypal.com/paypalme/majunping)
