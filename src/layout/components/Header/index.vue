@@ -6,8 +6,8 @@
       v-if="navMode === 'horizontal' || (navMode === 'horizontal-mix' && mixMenu)"
     >
       <div class="logo" v-if="navMode === 'horizontal'">
-        <img src="~@/assets/images/logo.png" alt="" />
-        <h2 v-show="!collapsed" class="title">NaiveUiAdmin</h2>
+        <!-- <img src="~@/assets/images/logo.png" alt="" /> -->
+        <h2 v-show="!collapsed" class="title">title1111</h2>
       </div>
       <AsideMenu
         v-model:collapsed="collapsed"
@@ -132,13 +132,22 @@
   import { TABS_ROUTES } from '@/store/mutation-types';
   import { useUserStore } from '@/store/modules/user';
   import { useLockscreenStore } from '@/store/modules/lockscreen';
+  import { useDesignSettingStore } from '@/store/modules/designSetting';
   import ProjectSetting from './ProjectSetting.vue';
   import { AsideMenu } from '@/layout/components/Menu';
   import { useProjectSetting } from '@/hooks/setting/useProjectSetting';
 
+
+  const designStore = useDesignSettingStore();
+
   export default defineComponent({
     name: 'PageHeader',
-    components: { ...components, NDialogProvider, ProjectSetting, AsideMenu },
+    components: { 
+      ...components, 
+      NDialogProvider, 
+      ProjectSetting, 
+      AsideMenu 
+    },
     props: {
       collapsed: {
         type: Boolean,
@@ -152,8 +161,13 @@
       const useLockscreen = useLockscreenStore();
       const message = useMessage();
       const dialog = useDialog();
-      const { getNavMode, getNavTheme, getHeaderSetting, getMenuSetting, getCrumbsSetting } =
-        useProjectSetting();
+      const { 
+        getNavMode, 
+        getNavTheme, 
+        getHeaderSetting, 
+        getMenuSetting, 
+        getCrumbsSetting 
+        } = useProjectSetting();
 
       const { username } = userStore?.info || {};
 
@@ -166,6 +180,7 @@
         navTheme: getNavTheme,
         headerSetting: getHeaderSetting,
         crumbsSetting: getCrumbsSetting,
+        title:designStore.appTitle
       });
 
       const getInverted = computed(() => {

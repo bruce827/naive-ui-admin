@@ -14,9 +14,11 @@ const {
   permissionMode,
   isPageAnimate,
   pageAnimateType,
+  // projectTitle
 } = projectSetting;
 
 interface ProjectSettingState {
+  projectTitle: string; // 标题
   navMode: string; //导航模式
   navTheme: string; //导航风格
   headerSetting: IheaderSetting; //顶部设置

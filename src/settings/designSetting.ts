@@ -21,12 +21,15 @@ export const appThemeList: string[] = [
 ];
 
 const setting = {
-  //深色主题
-  darkTheme: false,
+  // 判断系统是否使用深色主题
+  darkTheme: window.matchMedia('(prefers-color-scheme: dark)').matches || false ,
   //系统主题色
   appTheme: '#2d8cf0',
   //系统内置主题色列表
   appThemeList,
+  // 项目名称
+  appTitle:'优呼Saas平台(云杉版)'
+
 };
 
 export default setting;

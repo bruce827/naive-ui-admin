@@ -111,14 +111,15 @@
   const formInline = reactive({
     username: 'admin',
     password: '123456',
-    isCaptcha: false,
+      // 不需要验证码
+    isCaptcha: true,
   });
 
   const rules = {
     username: { required: true, message: '请输入用户名', trigger: 'blur' },
     password: { required: true, message: '请输入密码', trigger: 'blur' },
     isCaptcha: {
-      required: true,
+      required: false,
       type: 'boolean',
       trigger: 'change',
       message: '请点击按钮进行验证码校验',
